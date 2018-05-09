@@ -1,0 +1,12 @@
+export PATH=/root/anaconda3/bin:$PATH
+
+
+
+git pull --rebase origin master
+git push -u origin master
+git add 
+git commit -m ""
+git config --global user.name ""
+git config --global user.email ""
+
+
