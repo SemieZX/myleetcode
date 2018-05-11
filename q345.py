@@ -15,3 +15,24 @@ def reverseVowels(self,s):
         l += 1
         r -= 1
     return "".join(res)
+    
+
+def reverseVowels(self, s):
+    """
+    :type s: str
+    :rtype: str
+    """
+    if s == "":
+        return s
+    l ,r = 0, len(s) - 1
+    mylist = list(s)
+    mydir = "aeiouAEIOU"
+    while l < r:
+        while mylist[l] not in mydir  and l < r:
+            l += 1
+        while mylist[r] not in mydir and l < r:
+            r -= 1
+        mylist[l] , mylist[r] = mylist[r] , mylist[l]
+        l += 1
+        r -= 1
+    return "".join(mylist)
