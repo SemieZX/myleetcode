@@ -2,8 +2,9 @@ class Solution(object):
     def minWindow(self, s,t):
         need = {}
         for c in t:
-            need[c] = 0
-        need[c] += 1
+            if c not in need:
+                need[c] = 0
+            need[c] += 1
         freq = {}
 
         satisfied = 0
